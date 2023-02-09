@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: veer2/test8
+        image: nivedita21/imagepro22
         ports:
         - containerPort: 80
