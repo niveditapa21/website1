@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage('Hello'){
             agent{ 
-                label 'Kub-master'
+                label 'kub-master'
             }
             steps{
                 echo 'Hello World'
@@ -15,7 +15,7 @@ pipeline{
         }
         stage('git'){
             agent{ 
-                label 'Kub-master'
+                label 'kub-master'
             }
 
             steps{
@@ -25,7 +25,7 @@ pipeline{
         }
         stage('docker') {
             agent { 
-                label 'Kub-master'
+                label 'kub-master'
             }
 
             steps {
@@ -38,7 +38,7 @@ pipeline{
         }
         stage('Kuberneets') {
             agent { 
-                label 'Kub-master'
+                label 'kub-master'
             }
 
             steps {
