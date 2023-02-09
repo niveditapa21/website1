@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nivedita21/imagepro22
+        image: nivedita21/kube-image1
         ports:
         - containerPort: 80
