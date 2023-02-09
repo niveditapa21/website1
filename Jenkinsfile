@@ -30,7 +30,7 @@ pipeline{
 
             steps {
 
-                sh 'sudo docker build  /home/ubuntu/jenkins/workspace/project2/Jenkinsfile -t nivedita21/kube-image1'
+                sh 'sudo docker build  /home/ubuntu/jenkins/workspace/project2 -t nivedita21/kube-image1'
                 sh 'sudo echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
                 sh 'sudo docker push nivedita21/kube-image1'
 
